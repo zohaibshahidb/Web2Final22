@@ -1,0 +1,14 @@
+#hero1{
+    outline: 5px;
+    outline-color: red;
+    >div{
+        outline: 5px;
+        outline-color: red;
+
+        #test1{
+            p{
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+        }
+    }
+}
