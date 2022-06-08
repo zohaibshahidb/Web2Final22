@@ -383,6 +383,9 @@ ul li {
 .center {
   margin-left: auto;
   margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* =============
@@ -416,6 +419,30 @@ body {
 /* =============
     Buttons
 ============= */
+.readmore {
+  display: grid;
+  grid-template-columns: 90px auto;
+  grid-template-areas: "readmoretxt arrow";
+  margin-top: 5px;
+}
+.readmore a {
+  grid-area: readmoretxt;
+  text-decoration: none;
+  color: white;
+  font-family: "Righteous", cursive;
+  font-size: small;
+}
+.readmore img {
+  grid-area: arrow;
+  height: 15px;
+  margin-left: -20px;
+  margin-top: 5px;
+}
+
+.readmore :hover {
+  cursor: pointer;
+}
+
 /* =============
     Forms
 ============= */
@@ -608,32 +635,62 @@ body {
 #homepg #climate > div #climatetxt p {
   font-size: small;
 }
-#homepg #climate > div #climatetxt .readmore {
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-template-areas: "readmoretxt arrow";
-  margin-top: 5px;
+#homepg #gapquicklinksmid {
+  margin-top: 60px;
 }
-#homepg #climate > div #climatetxt .readmore a {
-  grid-area: readmoretxt;
-  text-decoration: none;
+#homepg #recentnews {
+  grid-area: recentnews;
+}
+#homepg #recentnews > div {
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  display: grid;
+  grid-template-columns: 160px auto;
+  grid-template-areas: "recentnewstxt recentnewsimg";
+}
+#homepg #recentnews > div #recentnewsimg {
+  grid-area: recentnewsimg;
+  display: grid;
+  grid-template-columns: auto 275px auto;
+  width: 150px;
+  height: 170px;
+  overflow: hidden;
+  border-radius: 30px;
+}
+#homepg #recentnews > div #recentnewsimg img {
+  margin: 0px 0px 0px -40px;
+  height: 170px;
+}
+#homepg #recentnews > div #recentnewstxt {
+  grid-area: recentnewstxt;
   color: white;
+  width: 150px;
+}
+#homepg #recentnews > div #recentnewstxt h4 {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 18px;
   font-family: "Righteous", cursive;
+  margin-bottom: 10px;
+}
+#homepg #recentnews > div #recentnewstxt p {
   font-size: small;
 }
-#homepg #climate > div #climatetxt .readmore img {
-  grid-area: arrow;
-  height: 15px;
-  margin-left: -20px;
-  margin-top: 5px;
+#homepg #gapquicklinksend {
+  margin-top: 80px;
 }
-#homepg #climate > div #climatetxt .readmore :hover {
-  cursor: pointer;
+#homepg #addarrowsimgcard {
+  grid-area: heroimgcardall;
+  margin-bottom: 100px;
 }
-#homepg #heroimgcard1 {
-  margin-bottom: 40px;
+#homepg #addarrowsimgcard > div #arrowleft {
+  grid-area: arrowleft;
 }
-#homepg #heroimgcard1 #heroimgdiv {
+#homepg #addarrowsimgcard > div > div {
+  grid-area: heroimgcard;
+}
+#homepg #addarrowsimgcard > div > div #heroimgcard1 #heroimgdiv {
   display: grid;
   grid-template-columns: auto 275px auto;
   width: 275px;
@@ -644,13 +701,22 @@ body {
   border-color: white;
   border-style: solid;
 }
-#homepg #heroimgcard1 #heroimgdiv img {
+#homepg #addarrowsimgcard > div > div #heroimgcard1 #heroimgdiv img {
   margin: -50px 0px 0px -300px;
 }
-#homepg #heroimgcard1 #heroimgcardtxt {
+#homepg #addarrowsimgcard > div > div #heroimgcard1 #heroimgcardtxt {
   margin-top: -120px;
-  width: 250px;
+  width: 240px;
   margin-left: 16px;
   font-size: 18px;
   line-height: 25px;
+  letter-spacing: 2px;
+}
+@media (min-width: 768px) {
+  #homepg #addarrowsimgcard > div > div #heroimgcard1 #heroimgcardtxt {
+    display: none;
+  }
+}
+#homepg #addarrowsimgcard > div #arrowright {
+  grid-area: arrowright;
 }

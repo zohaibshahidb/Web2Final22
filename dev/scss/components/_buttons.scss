@@ -1,3 +1,30 @@
 /* =============
     Buttons
 ============= */
+
+// Read more button
+
+.readmore{
+    display: grid;
+    grid-template-columns: 90px auto;
+    grid-template-areas: "readmoretxt arrow";
+    margin-top: 5px;
+    a{
+        grid-area: readmoretxt;
+        text-decoration: none;
+        color: white;
+        font-family: 'Righteous', cursive;
+        font-size: small;
+    }
+    img{
+        grid-area: arrow;
+        height: 15px;
+        margin-left: -20px;
+        margin-top: 5px;
+    }
+}
+.readmore :hover{
+    cursor: pointer;
+}
+
+// End of read more button

@@ -158,61 +158,112 @@ body{
                 p{
                     font-size: small;
                 }
-                .readmore{
-                    display: grid;
-                    grid-template-columns: auto auto;
-                    grid-template-areas: "readmoretxt arrow";
-                    margin-top: 5px;
-                    a{
-                        grid-area: readmoretxt;
-                        text-decoration: none;
-                        color: white;
-                        font-family: 'Righteous', cursive;
-                        font-size: small;
-                    }
-                    img{
-                        grid-area: arrow;
-                        height: 15px;
-                        margin-left: -20px;
-                        margin-top: 5px;
-                    }
+            }
+        }
+    }
+
+    #gapquicklinksmid{
+        margin-top: 60px;
+    }
+
+    #recentnews{
+        grid-area: recentnews;
+        >div{
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+            display: grid;
+            grid-template-columns: 160px auto;
+            grid-template-areas: "recentnewstxt recentnewsimg";
+            #recentnewsimg{
+                grid-area: recentnewsimg;
+                display: grid;
+                grid-template-columns: auto 275px auto;
+                width: 150px;
+                height: 170px;
+                overflow: hidden;
+                border-radius: 30px;
+                img{
+                    margin: 0px 0px 0px -40px;     
+                    height: 170px;
                 }
-                .readmore :hover{
-                    cursor: pointer;
+            }
+
+            #recentnewstxt{
+                grid-area: recentnewstxt;
+                color: white;
+                width: 150px;
+                h4{
+                    text-transform: uppercase;
+                    letter-spacing: 3px;
+                    font-size: 18px;
+                    font-family: 'Righteous', cursive;
+                    margin-bottom: 10px;
+                }
+                p{
+                    font-size: small;
                 }
             }
         }
     }
 
+    #gapquicklinksend{
+        margin-top: 80px;
+    }
+
     // End of quick links
 
 
-    // Image card
+    // Hero image card
 
-    #heroimgcard1{
-        #heroimgdiv{
-            display: grid;
-            grid-template-columns: auto 275px auto;
-            width: 275px;
-            height: 420px;
-            overflow: hidden;
-            border-radius: 30px;
-            border: 1px;
-            border-color: white;
-            border-style: solid;
-            img{
-            margin: -50px 0px 0px -300px;     
+    #addarrowsimgcard{
+        grid-area: heroimgcardall;
+        >div{
+            #arrowleft{
+                grid-area: arrowleft;
+            }
+            >div{
+                grid-area: heroimgcard;
+                #heroimgcard1{
+                    #heroimgdiv{
+                        display: grid;
+                        grid-template-columns: auto 275px auto;
+                        width: 275px;
+                        height: 420px;
+                        overflow: hidden;
+                        border-radius: 30px;
+                        border: 1px;
+                        border-color: white;
+                        border-style: solid;
+                        img{
+                        margin: -50px 0px 0px -300px;     
+                        }
+                    }
+                    #heroimgcardtxt{
+                        margin-top: -120px;
+                        width: 240px;
+                        margin-left: 16px;
+                        font-size: 18px;
+                        line-height: 25px;
+                        letter-spacing: 2px;
+                        
+                        @include md{
+                            display: none;
+                        }
+                    }
+                }
+            }
+            #arrowright{
+                grid-area: arrowright;
             }
         }
-        #heroimgcardtxt{
-            margin-top: -120px;
-            width: 250px;
-            margin-left: 16px;
-            font-size: 18px;
-            line-height: 25px;
-        }
-            margin-bottom: 40px;
-            }
+        margin-bottom: 100px;
+    }
 
         // Enf of hero image card
+
+
+
+
+    // End of page
     }

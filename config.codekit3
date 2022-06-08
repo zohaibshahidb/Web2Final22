@@ -145,19 +145,6 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/deploy\/img\/content\/mae_jemison.jpg" : {
-      "ft" : 16384,
-      "iS" : 130631,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/deploy\/img\/content\/mae_jemison.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
     "\/deploy\/img\/content\/permafrostusgs.jpeg" : {
       "ft" : 16384,
       "iS" : 308636,
