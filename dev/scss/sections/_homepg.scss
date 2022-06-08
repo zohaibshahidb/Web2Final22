@@ -9,15 +9,185 @@ body{
 
 #homepg{
 
+    // Hero
+
     #head1mission{
         margin-top: 40px;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         letter-spacing: 5px;
         text-transform: uppercase;
     }
 
+    #heroheader{
+        width: 350px;
+        line-height: 60px;
+        text-transform: uppercase;
+        font-size: 15px;
+    }
 
-    // Start of hero image card
+    #headerbody{
+        letter-spacing: 0.1px;
+        line-height: 25px;
+        font-size: 14px;
+        p{
+            width: 300px;
+            margin-bottom: 30px;
+        }
+    }
+
+    // Enter name and passcode
+
+    #entername{
+        >div{
+            form{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 5px;
+                input{
+                    background-color: var(--spacedark);
+                    width: 170px;
+                    height: 10px;
+                    border: 0;
+                    padding: 10px 0;
+                    margin: 5px 0;
+                    text-align: center;
+                    font-size: 10px;
+                    border-radius: 0px;
+                    color: white;
+                }
+            }
+        }
+    }
+
+    #pin{
+        >div{
+            form{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 5px;
+                input{
+                    background-color: var(--spacedark);
+                    width: 40px;
+                    height: 20px;
+                    border: 0;
+                    padding: 10px 0;
+                    margin: 5px 0;
+                    text-align: center;
+                    text-justify: center;
+                    font-size: 20px;
+                    border-radius: 0px;
+                    text-decoration-color: white;
+                    color: white;
+                    font-family: 'Righteous', cursive;
+                }
+
+                input::-webkit-outer-spin-button,
+                input::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+                }
+                input[type=number] {
+                    -moz-appearance: textfield;
+                }
+            }
+        }
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    // End of enter name and passcode
+
+    article{
+        >div{
+            display: flex;
+                align-items: center;
+                justify-content: center;
+            p{
+                display: block;
+                letter-spacing: 0.1px;
+                line-height: 25px;
+                font-size: 12px;
+                text-align: center;
+                width: 250px;
+                margin-bottom: 80px;
+            }
+        }
+    }
+
+    // End of hero
+
+
+    // Quick links
+
+    #climate{
+        grid-area: climate;
+        >div{
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+            display: grid;
+            grid-template-columns: 160px auto;
+            grid-template-areas: "climateimg climatetxt";
+            #climateimg{
+                grid-area: climateimg;
+                display: grid;
+                grid-template-columns: auto 275px auto;
+                width: 150px;
+                height: 170px;
+                overflow: hidden;
+                border-radius: 30px;
+                
+                img{
+                    margin: 0px 0px 0px -40px;     
+                    height: 170px;
+                }
+            }
+
+            #climatetxt{
+                grid-area: climatetxt;
+                color: white;
+                width: 150px;
+                h4{
+                    text-transform: uppercase;
+                    letter-spacing: 3px;
+                    font-size: 18px;
+                    font-family: 'Righteous', cursive;
+                    margin-bottom: 10px;
+                }
+                p{
+                    font-size: small;
+                }
+                .readmore{
+                    display: grid;
+                    grid-template-columns: auto auto;
+                    grid-template-areas: "readmoretxt arrow";
+                    margin-top: 5px;
+                    a{
+                        grid-area: readmoretxt;
+                        text-decoration: none;
+                        color: white;
+                        font-family: 'Righteous', cursive;
+                        font-size: small;
+                    }
+                    img{
+                        grid-area: arrow;
+                        height: 15px;
+                        margin-left: -20px;
+                        margin-top: 5px;
+                    }
+                }
+                .readmore :hover{
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    // End of quick links
+
+
+    // Image card
 
     #heroimgcard1{
         #heroimgdiv{

@@ -18,6 +18,7 @@ html {
   --nasaorange: #FF5200;
   --nasagrey: #D9D9D9;
   --spaceteal: #003355;
+  --spacedark: #333333;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -379,6 +380,11 @@ ul li {
   grid-area: global-grid;
 }
 
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* =============
     Typography
 ============= */
@@ -387,7 +393,7 @@ h1, h2, h3 {
   margin: 0;
   margin-bottom: 10px;
   font-family: "Righteous", cursive;
-  line-height: 30px;
+  letter-spacing: 1px;
 }
 
 h4 {
@@ -480,9 +486,149 @@ body {
 
 #homepg #head1mission {
   margin-top: 40px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   letter-spacing: 5px;
   text-transform: uppercase;
+}
+#homepg #heroheader {
+  width: 350px;
+  line-height: 60px;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+#homepg #headerbody {
+  letter-spacing: 0.1px;
+  line-height: 25px;
+  font-size: 14px;
+}
+#homepg #headerbody p {
+  width: 300px;
+  margin-bottom: 30px;
+}
+#homepg #entername > div form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+#homepg #entername > div form input {
+  background-color: var(--spacedark);
+  width: 170px;
+  height: 10px;
+  border: 0;
+  padding: 10px 0;
+  margin: 5px 0;
+  text-align: center;
+  font-size: 10px;
+  border-radius: 0px;
+  color: white;
+}
+#homepg #pin {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#homepg #pin > div form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+#homepg #pin > div form input {
+  background-color: var(--spacedark);
+  width: 40px;
+  height: 20px;
+  border: 0;
+  padding: 10px 0;
+  margin: 5px 0;
+  text-align: center;
+  text-justify: center;
+  font-size: 20px;
+  border-radius: 0px;
+  text-decoration-color: white;
+  color: white;
+  font-family: "Righteous", cursive;
+}
+#homepg #pin > div form input::-webkit-outer-spin-button,
+#homepg #pin > div form input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+#homepg #pin > div form input[type=number] {
+  -moz-appearance: textfield;
+}
+#homepg article > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#homepg article > div p {
+  display: block;
+  letter-spacing: 0.1px;
+  line-height: 25px;
+  font-size: 12px;
+  text-align: center;
+  width: 250px;
+  margin-bottom: 80px;
+}
+#homepg #climate {
+  grid-area: climate;
+}
+#homepg #climate > div {
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  display: grid;
+  grid-template-columns: 160px auto;
+  grid-template-areas: "climateimg climatetxt";
+}
+#homepg #climate > div #climateimg {
+  grid-area: climateimg;
+  display: grid;
+  grid-template-columns: auto 275px auto;
+  width: 150px;
+  height: 170px;
+  overflow: hidden;
+  border-radius: 30px;
+}
+#homepg #climate > div #climateimg img {
+  margin: 0px 0px 0px -40px;
+  height: 170px;
+}
+#homepg #climate > div #climatetxt {
+  grid-area: climatetxt;
+  color: white;
+  width: 150px;
+}
+#homepg #climate > div #climatetxt h4 {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 18px;
+  font-family: "Righteous", cursive;
+  margin-bottom: 10px;
+}
+#homepg #climate > div #climatetxt p {
+  font-size: small;
+}
+#homepg #climate > div #climatetxt .readmore {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-areas: "readmoretxt arrow";
+  margin-top: 5px;
+}
+#homepg #climate > div #climatetxt .readmore a {
+  grid-area: readmoretxt;
+  text-decoration: none;
+  color: white;
+  font-family: "Righteous", cursive;
+  font-size: small;
+}
+#homepg #climate > div #climatetxt .readmore img {
+  grid-area: arrow;
+  height: 15px;
+  margin-left: -20px;
+  margin-top: 5px;
+}
+#homepg #climate > div #climatetxt .readmore :hover {
+  cursor: pointer;
 }
 #homepg #heroimgcard1 {
   margin-bottom: 40px;

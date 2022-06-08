@@ -21,12 +21,32 @@
       "oF" : 0,
       "pg" : 0
     },
-    "\/deploy\/img\/content\/638831main_globe_east_2048.jpeg" : {
+    "\/deploy\/img\/assets\/arrowleft.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/assets\/arrowleft.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/deploy\/img\/assets\/arrowright.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/assets\/arrowright.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/deploy\/img\/content\/darkmodewaters.jpeg" : {
       "ft" : 16384,
-      "iS" : 536295,
+      "iS" : 732082,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/deploy\/img\/content\/638831main_globe_east_2048.jpg",
+      "oAP" : "\/deploy\/img\/content\/darkmodewaters.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -34,12 +54,12 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/deploy\/img\/content\/dr_lyndsey_mcmillon-brown.jpeg" : {
+    "\/deploy\/img\/content\/dr_lyndsey.jpeg" : {
       "ft" : 16384,
       "iS" : 1339324,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/deploy\/img\/content\/dr_lyndsey_mcmillon-brown.jpg",
+      "oAP" : "\/deploy\/img\/content\/dr_lyndsey.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -47,11 +67,37 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/deploy\/img\/content\/FullMoon2010 1.png" : {
+    "\/deploy\/img\/content\/earth-iss-spaceflight.jpeg" : {
+      "ft" : 16384,
+      "iS" : 426399,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/content\/earth-iss-spaceflight.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/content\/earth1.jpeg" : {
+      "ft" : 16384,
+      "iS" : 536295,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/content\/earth1.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/content\/fullmoon.png" : {
       "ft" : 32768,
       "iS" : 158934,
       "oA" : 0,
-      "oAP" : "\/deploy\/img\/content\/FullMoon2010 1.png",
+      "oAP" : "\/deploy\/img\/content\/fullmoon.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -73,19 +119,6 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/deploy\/img\/content\/imagesinsight20180312insight20180312-16.jpeg" : {
-      "ft" : 16384,
-      "iS" : 102029,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/deploy\/img\/content\/imagesinsight20180312insight20180312-16.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
     "\/deploy\/img\/content\/jpegPIA24173.jpeg" : {
       "ft" : 16384,
       "iS" : 11010484,
@@ -99,38 +132,25 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/deploy\/img\/content\/jsc2022e001692.jpeg" : {
-      "ft" : 16384,
-      "iS" : 732082,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/deploy\/img\/content\/jsc2022e001692.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/deploy\/img\/content\/mae_jemison_29487037511.jpeg" : {
+    "\/deploy\/img\/content\/mae_jemison.jpeg" : {
       "ft" : 16384,
       "iS" : 150781,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/deploy\/img\/content\/mae_jemison_29487037511.jpg",
+      "oAP" : "\/deploy\/img\/content\/mae_jemison.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
     },
-    "\/deploy\/img\/content\/nasa-astronaut-mark-vande-hei-return-earth-iss-spaceflight.jpeg" : {
+    "\/deploy\/img\/content\/mae_jemison.jpg" : {
       "ft" : 16384,
-      "iS" : 426399,
+      "iS" : 130631,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/deploy\/img\/content\/nasa-astronaut-mark-vande-hei-return-earth-iss-spaceflight.jpg",
+      "oAP" : "\/deploy\/img\/content\/mae_jemison.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -138,12 +158,12 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/deploy\/img\/content\/p50142.jpeg" : {
+    "\/deploy\/img\/content\/permafrostusgs.jpeg" : {
       "ft" : 16384,
-      "iS" : 175579,
+      "iS" : 308636,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/deploy\/img\/content\/p50142.jpg",
+      "oAP" : "\/deploy\/img\/content\/permafrostusgs.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -151,12 +171,25 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/deploy\/img\/content\/pia22946-16.jpeg" : {
+    "\/deploy\/img\/content\/recentnewsimg1.jpeg" : {
+      "ft" : 16384,
+      "iS" : 102029,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/content\/recentnewsimg1.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/content\/saturn.jpeg" : {
       "ft" : 16384,
       "iS" : 69268,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/deploy\/img\/content\/pia22946-16.jpg",
+      "oAP" : "\/deploy\/img\/content\/saturn.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -173,6 +206,19 @@
       "oIPL" : 0,
       "opt" : 0,
       "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/content\/stormeye.jpeg" : {
+      "ft" : 16384,
+      "iS" : 175579,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/content\/stormeye.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
