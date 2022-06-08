@@ -470,8 +470,12 @@ textarea {
 #header {
   margin-bottom: 20px;
 }
+#header #headertopgap {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 #header #stripes #stripe1 {
-  margin-top: 40px;
+  margin-top: 60px;
   width: 100%;
   height: 17px;
   background-color: var(--nasateal);
@@ -683,6 +687,11 @@ body {
 #homepg #addarrowsimgcard {
   grid-area: heroimgcardall;
   margin-bottom: 100px;
+}
+#homepg #addarrowsimgcard > div {
+  display: grid;
+  grid-template-columns: 40px auto 40px;
+  grid-template-areas: "arrowleft heroimgcard arrowright";
 }
 #homepg #addarrowsimgcard > div #arrowleft {
   grid-area: arrowleft;

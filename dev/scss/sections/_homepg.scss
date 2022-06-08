@@ -219,6 +219,9 @@ body{
     #addarrowsimgcard{
         grid-area: heroimgcardall;
         >div{
+            display: grid;
+            grid-template-columns: 40px auto 40px;
+            grid-template-areas: "arrowleft heroimgcard arrowright";
             #arrowleft{
                 grid-area: arrowleft;
             }
