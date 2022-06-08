@@ -15,7 +15,19 @@ $screen-lg-min: 1024px;
 // Large desktops
 $screen-xl-min: 1200px;
 
+// Extra large desktops
+$screen-xxl-min: 1440px;
+
 
 // Colors
-$white: #fff;
-$black: #000;
+// $white: #fff;
+// $black: #000;
+
+:root{
+    --white: #fff;
+    --black: #000;
+    --nasateal: #054C63;
+    --nasaorange: #FF5200;
+    --nasagrey: #D9D9D9;
+    --spaceteal: #003355;
+}

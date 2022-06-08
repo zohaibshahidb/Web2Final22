@@ -1,3 +1,44 @@
 /* =============
     Header
 ============= */
+
+#header{
+
+    // Stripes
+
+    #stripes{
+        #stripe1{
+            margin-top: 40px;
+            width: 100%;
+            height: 17px;
+            background-color: var(--nasateal);
+        }
+        #stripe2{
+            margin-top: 7px;
+            width: 100%;
+            height: 10px;
+            background-color: var(--nasaorange);
+        }
+        #stripe3{
+            margin-top: 7px;
+            width: 100%;
+            height: 30px;
+            background-color: var(--nasagrey);
+        }
+        #stripe4{
+            margin-top: 30px;
+            width: 100%;
+            height: 17px;
+            background-color: var(--spaceteal);
+
+            @include md{
+                display: none;
+            }
+        }
+
+        // End of Stripes
+
+    
+    }
+    margin-bottom: 20px;
+}
