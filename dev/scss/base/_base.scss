@@ -16,7 +16,18 @@ ul{
      display: grid;
      grid-template-columns: 16px auto 16px;
      grid-template-areas: ". global-grid .";
-     
+     @include md{
+         grid-template-columns: auto 770px auto;
+     }
+     @include lg{
+        grid-template-columns: auto 1024px auto;
+    }
+    @include xl{
+        grid-template-columns: auto 1200 auto;
+    }
+    @include xxl{
+        grid-template-columns: auto 1440px auto;
+    }
      >div{
          grid-area: global-grid;
      }
@@ -32,4 +43,100 @@ ul{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.gap20px{
+    margin-bottom: 20px;
+}
+
+
+// Cards
+
+.imgcard{
+    display: grid;
+    grid-template-columns: auto 275px auto;
+    width: 330px;
+    height: 230px;
+    overflow: hidden;
+    border-radius: 20px;
+    // border: 1px;
+    // border-color: white;
+    // border-style: solid;
+    img{
+        margin: 0px 0px 0px 0px;
+        height: 230px;
+    }
+    article{
+        padding-left: 16px;
+        margin-top: -95px;
+        h5{
+            grid-area: imgcatergory;
+            font-size: 12px;
+            font-weight: 100;
+        }
+        h3{
+            font-weight: 100;
+            grid-area: imgtitle;
+            margin-top: -3px;
+        }
+        h4{
+            grid-area: imgdate;
+            font-size: 12px;
+            font-weight: 100;
+            margin-top: -5px;
+        }
+    }
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.vidcard{
+    display: grid;
+    grid-template-columns: auto 275px auto;
+    width: 330px;
+    height: 230px;
+    overflow: hidden;
+    border-radius: 20px;
+    // border: 1px;
+    // border-color: white;
+    // border-style: solid;
+    img{
+        margin: 0px 0px 0px 0px;
+        height: 230px;
+    }
+    article{
+        padding-left: 16px;
+        margin-top: -80px;
+        h5{
+            grid-area: imgcatergory;
+            font-size: 12px;
+            font-weight: 100;
+        }
+        h3{
+            font-weight: 100;
+            grid-area: imgtitle;
+            margin-top: -3px;
+        }
+        h4{
+            grid-area: imgdate;
+            font-size: 12px;
+            font-weight: 100;
+            margin-top: -5px;
+        }
+    }
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.vidcardall{
+    width: 330px;
+    height: 350px;
+    overflow: hidden;
+    p{
+        padding-left: 16px;
+        padding-right: 16px;
+        font-size: small;
+        font-weight: 300;
+    }
 }

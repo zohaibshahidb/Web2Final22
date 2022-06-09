@@ -171,6 +171,14 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/deploy\/img\/content\/recentnews2.avif" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/content\/recentnews2.avif",
+      "oF" : 0
+    },
     "\/deploy\/img\/content\/recentnewsimg1.jpeg" : {
       "ft" : 16384,
       "iS" : 102029,
@@ -190,6 +198,32 @@
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/content\/saturn.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/content\/selfieonmars.jpg" : {
+      "ft" : 16384,
+      "iS" : 2601780,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/content\/selfieonmars.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/content\/space-flame-cropped.jpg" : {
+      "ft" : 16384,
+      "iS" : 293103,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/content\/space-flame-cropped.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,

@@ -376,6 +376,26 @@ ul li {
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". global-grid .";
 }
+@media (min-width: 768px) {
+  .globalcssgrid {
+    grid-template-columns: auto 770px auto;
+  }
+}
+@media (min-width: 1024px) {
+  .globalcssgrid {
+    grid-template-columns: auto 1024px auto;
+  }
+}
+@media (min-width: 1200px) {
+  .globalcssgrid {
+    grid-template-columns: auto 1200 auto;
+  }
+}
+@media (min-width: 1440px) {
+  .globalcssgrid {
+    grid-template-columns: auto 1440px auto;
+  }
+}
 .globalcssgrid > div {
   grid-area: global-grid;
 }
@@ -386,6 +406,92 @@ ul li {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.gap20px {
+  margin-bottom: 20px;
+}
+
+.imgcard {
+  display: grid;
+  grid-template-columns: auto 275px auto;
+  width: 330px;
+  height: 230px;
+  overflow: hidden;
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.imgcard img {
+  margin: 0px 0px 0px 0px;
+  height: 230px;
+}
+.imgcard article {
+  padding-left: 16px;
+  margin-top: -95px;
+}
+.imgcard article h5 {
+  grid-area: imgcatergory;
+  font-size: 12px;
+  font-weight: 100;
+}
+.imgcard article h3 {
+  font-weight: 100;
+  grid-area: imgtitle;
+  margin-top: -3px;
+}
+.imgcard article h4 {
+  grid-area: imgdate;
+  font-size: 12px;
+  font-weight: 100;
+  margin-top: -5px;
+}
+
+.vidcard {
+  display: grid;
+  grid-template-columns: auto 275px auto;
+  width: 330px;
+  height: 230px;
+  overflow: hidden;
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.vidcard img {
+  margin: 0px 0px 0px 0px;
+  height: 230px;
+}
+.vidcard article {
+  padding-left: 16px;
+  margin-top: -80px;
+}
+.vidcard article h5 {
+  grid-area: imgcatergory;
+  font-size: 12px;
+  font-weight: 100;
+}
+.vidcard article h3 {
+  font-weight: 100;
+  grid-area: imgtitle;
+  margin-top: -3px;
+}
+.vidcard article h4 {
+  grid-area: imgdate;
+  font-size: 12px;
+  font-weight: 100;
+  margin-top: -5px;
+}
+
+.vidcardall {
+  width: 330px;
+  height: 350px;
+  overflow: hidden;
+}
+.vidcardall p {
+  padding-left: 16px;
+  padding-right: 16px;
+  font-size: small;
+  font-weight: 300;
 }
 
 /* =============
@@ -399,7 +505,7 @@ h1, h2, h3 {
   letter-spacing: 1px;
 }
 
-h4 {
+h4, h5 {
   padding: 0;
   margin: 0;
   font-family: "Heebo", sans-serif, 100;
@@ -441,6 +547,22 @@ body {
 
 .readmore :hover {
   cursor: pointer;
+}
+
+.defaultbutton {
+  background-color: black;
+  width: 180px;
+  height: 50px;
+  padding: 10px 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 12px;
+  color: white;
+  border-radius: 10px;
+  border: 2px;
+  border-color: white;
+  border-style: solid;
 }
 
 /* =============
@@ -515,17 +637,46 @@ body {
   color: white;
 }
 
+#homepg #headimg {
+  margin-top: 30px;
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 0px;
+  display: none;
+}
+#homepg #headimg img {
+  margin: -70px 0px 0px 0px;
+  width: 600px;
+}
+@media (min-width: 768px) {
+  #homepg #headimg {
+    display: grid;
+  }
+}
 #homepg #head1mission {
   margin-top: 40px;
   margin-bottom: 10px;
   letter-spacing: 5px;
   text-transform: uppercase;
 }
+@media (min-width: 768px) {
+  #homepg #head1mission {
+    font-size: large;
+  }
+}
 #homepg #heroheader {
   width: 350px;
   line-height: 60px;
   text-transform: uppercase;
   font-size: 15px;
+}
+@media (min-width: 768px) {
+  #homepg #heroheader {
+    font-size: 24px;
+    width: 600px;
+    line-height: 70px;
+  }
 }
 #homepg #headerbody {
   letter-spacing: 0.1px;
@@ -542,6 +693,12 @@ body {
   justify-content: center;
   gap: 5px;
 }
+@media (min-width: 768px) {
+  #homepg #entername > div form {
+    justify-content: left;
+    gap: 12px;
+  }
+}
 #homepg #entername > div form input {
   background-color: var(--spacedark);
   width: 170px;
@@ -554,6 +711,13 @@ body {
   border-radius: 0px;
   color: white;
 }
+@media (min-width: 768px) {
+  #homepg #entername > div form input {
+    width: 230px;
+    height: 30px;
+    font-size: 16px;
+  }
+}
 #homepg #pin {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -563,6 +727,12 @@ body {
   align-items: center;
   justify-content: center;
   gap: 5px;
+}
+@media (min-width: 768px) {
+  #homepg #pin > div form {
+    justify-content: left;
+    gap: 12px;
+  }
 }
 #homepg #pin > div form input {
   background-color: var(--spacedark);
@@ -579,6 +749,13 @@ body {
   color: white;
   font-family: "Righteous", cursive;
 }
+@media (min-width: 768px) {
+  #homepg #pin > div form input {
+    width: 60px;
+    height: 40px;
+    font-size: 32px;
+  }
+}
 #homepg #pin > div form input::-webkit-outer-spin-button,
 #homepg #pin > div form input::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -586,10 +763,19 @@ body {
 #homepg #pin > div form input[type=number] {
   -moz-appearance: textfield;
 }
+#homepg article {
+  grid-area: pininfo;
+}
 #homepg article > div {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@media (min-width: 768px) {
+  #homepg article > div {
+    align-items: left;
+    justify-content: left;
+  }
 }
 #homepg article > div p {
   display: block;
@@ -600,10 +786,60 @@ body {
   width: 250px;
   margin-bottom: 80px;
 }
-#homepg #climate {
+@media (min-width: 768px) {
+  #homepg article > div p {
+    text-align: left;
+  }
+}
+@media (min-width: 768px) {
+  #homepg #climateandevents {
+    margin-top: -200px;
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-areas: "climate events";
+  }
+}
+#homepg #climateandevents #events {
+  grid-area: events;
+  display: none;
+  background-color: var(--spaceteal);
+  padding: 32px;
+  width: 320px;
+}
+#homepg #climateandevents #events P {
+  margin-bottom: 20px;
+  font-size: small;
+}
+#homepg #climateandevents #events #eventsunderline {
+  height: 2px;
+  width: 100%;
+  background-color: white;
+}
+#homepg #climateandevents #events #eventsunderlinks {
+  display: grid;
+  grid-template-columns: 50% auto;
+  grid-template-areas: "sched launches";
+}
+#homepg #climateandevents #events #eventsunderlinks h4 {
+  grid-area: sched;
+  font-size: 12px;
+  text-align: left;
+}
+#homepg #climateandevents #events #eventsunderlinks h5 {
+  grid-area: launches;
+  font-size: 12px;
+  text-align: right;
+}
+@media (min-width: 768px) {
+  #homepg #climateandevents #events {
+    display: grid;
+  }
+}
+#homepg #climateandevents #climate {
+  margin-top: 200px;
   grid-area: climate;
 }
-#homepg #climate > div {
+#homepg #climateandevents #climate > div {
   align-items: center;
   justify-content: center;
   gap: 16px;
@@ -611,7 +847,7 @@ body {
   grid-template-columns: 160px auto;
   grid-template-areas: "climateimg climatetxt";
 }
-#homepg #climate > div #climateimg {
+#homepg #climateandevents #climate > div #climateimg {
   grid-area: climateimg;
   display: grid;
   grid-template-columns: auto 275px auto;
@@ -620,23 +856,23 @@ body {
   overflow: hidden;
   border-radius: 30px;
 }
-#homepg #climate > div #climateimg img {
+#homepg #climateandevents #climate > div #climateimg img {
   margin: 0px 0px 0px -40px;
   height: 170px;
 }
-#homepg #climate > div #climatetxt {
+#homepg #climateandevents #climate > div #climatetxt {
   grid-area: climatetxt;
   color: white;
   width: 150px;
 }
-#homepg #climate > div #climatetxt h4 {
+#homepg #climateandevents #climate > div #climatetxt h4 {
   text-transform: uppercase;
   letter-spacing: 3px;
   font-size: 18px;
   font-family: "Righteous", cursive;
   margin-bottom: 10px;
 }
-#homepg #climate > div #climatetxt p {
+#homepg #climateandevents #climate > div #climatetxt p {
   font-size: small;
 }
 #homepg #gapquicklinksmid {
@@ -644,6 +880,11 @@ body {
 }
 #homepg #recentnews {
   grid-area: recentnews;
+}
+@media (min-width: 768px) {
+  #homepg #recentnews {
+    display: none;
+  }
 }
 #homepg #recentnews > div {
   align-items: center;
@@ -680,6 +921,55 @@ body {
 }
 #homepg #recentnews > div #recentnewstxt p {
   font-size: small;
+}
+#homepg #recentnews2 {
+  display: none;
+  margin-bottom: 80px;
+}
+@media (min-width: 768px) {
+  #homepg #recentnews2 {
+    display: grid;
+  }
+}
+#homepg #recentnews2 > div {
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  display: grid;
+  grid-template-columns: 300px auto;
+  grid-template-areas: "recentnewsimg recentnewstxt";
+}
+#homepg #recentnews2 > div #recentnewsimg2 {
+  grid-area: recentnewsimg;
+  display: grid;
+  grid-template-columns: auto;
+  width: 300px;
+  height: 500px;
+  overflow: hidden;
+  border-radius: 30px;
+}
+#homepg #recentnews2 > div #recentnewsimg2 img {
+  margin: 0px 0px 0px -40px;
+  width: 400px;
+}
+#homepg #recentnews2 > div #recentnewstxt2 {
+  grid-area: recentnewstxt;
+  color: white;
+  width: 300px;
+}
+#homepg #recentnews2 > div #recentnewstxt2 h4 {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 18px;
+  font-family: "Righteous", cursive;
+  margin-bottom: 20px;
+}
+#homepg #recentnews2 > div #recentnewstxt2 h3 {
+  margin-bottom: 20px;
+}
+#homepg #recentnews2 > div #recentnewstxt2 p {
+  font-size: small;
+  margin-bottom: 20px;
 }
 #homepg #gapquicklinksend {
   margin-top: 80px;
@@ -728,4 +1018,17 @@ body {
 }
 #homepg #addarrowsimgcard > div #arrowright {
   grid-area: arrowright;
+}
+#homepg #imgcard1 img {
+  align-items: center;
+  margin: 0px 0px 0px 0px;
+}
+#homepg #imgcard2 img {
+  margin: 0px 0px 0px 0px;
+}
+#homepg #imgvidgap {
+  margin-bottom: 40px;
+}
+#homepg #gap20pxvid {
+  margin-bottom: 20px;
 }
