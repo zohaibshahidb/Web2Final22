@@ -89,6 +89,32 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/deploy\/img\/content\/DanielGNichols.jpeg" : {
+      "ft" : 16384,
+      "iS" : 115523,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/content\/DanielGNichols.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/content\/DanielGNicholscopy.jpg" : {
+      "ft" : 16384,
+      "iS" : 65093,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/content\/DanielGNicholscopy.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/img\/content\/darkmodewaters.jpeg" : {
       "ft" : 16384,
       "iS" : 732082,
@@ -193,6 +219,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/deploy\/img\/content\/jupiterspot.jpeg" : {
+      "ft" : 16384,
+      "iS" : 990206,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/content\/jupiterspot.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/img\/content\/mae_jemison.jpeg" : {
       "ft" : 16384,
       "iS" : 150781,
@@ -254,6 +293,19 @@
       "oIPL" : 1,
       "opt" : 1,
       "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/content\/nasahead.jpeg" : {
+      "ft" : 16384,
+      "iS" : 331253,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/content\/nasahead.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
@@ -357,12 +409,38 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/deploy\/img\/content\/StarlightReflections.jpeg" : {
+      "ft" : 16384,
+      "iS" : 447716,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/content\/StarlightReflections.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/img\/content\/stormeye.jpeg" : {
       "ft" : 16384,
       "iS" : 175579,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/content\/stormeye.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/content\/worldwindow.jpeg" : {
+      "ft" : 16384,
+      "iS" : 104446,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/content\/worldwindow.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,

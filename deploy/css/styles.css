@@ -1758,7 +1758,15 @@ body {
 #gallery #imgvidgap {
   margin-bottom: 40px;
 }
-#gallery #vidcardhero {
+@media (min-width: 1024px) {
+  #gallery #videoheroall {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas: "vidcardhero videoheroinfo";
+  }
+}
+#gallery #videoheroall #vidcardhero {
+  grid-area: vidcardhero;
   width: 400px;
   height: 250px;
   overflow: hidden;
@@ -1766,26 +1774,73 @@ body {
   border-style: solid;
   border-color: white;
 }
-#gallery #vidcardhero img {
-  width: 100%;
+@media (min-width: 768px) {
+  #gallery #videoheroall #vidcardhero {
+    width: 700px;
+    height: 420px;
+  }
 }
-#gallery #vidcardhero #play {
+#gallery #videoheroall #vidcardhero img {
+  height: 400px;
+  margin-top: 0px;
+}
+@media (min-width: 768px) {
+  #gallery #videoheroall #vidcardhero img {
+    height: 700px;
+    margin-top: -160px;
+  }
+}
+#gallery #videoheroall #vidcardhero #play {
   width: 20px;
   display: flex;
   align-items: center;
   vertical-align: middle;
   margin: auto;
-  margin-top: -150px;
+  margin-top: -400px;
 }
-#gallery #vidcardhero h3 {
+@media (min-width: 768px) {
+  #gallery #videoheroall #vidcardhero #play {
+    margin-top: -600px;
+  }
+}
+#gallery #videoheroall #vidcardhero h3 {
   display: none;
   padding: 16px;
 }
 @media (min-width: 768px) {
-  #gallery #vidcardhero h3 {
+  #gallery #videoheroall #vidcardhero h3 {
     margin-top: -140px;
     display: grid;
   }
+}
+#gallery #videoheroall #videoheroinfo {
+  grid-area: videoheroinfo;
+}
+@media (min-width: 768px) {
+  #gallery #videoheroall #videoheroinfo {
+    padding: 16px;
+  }
+}
+@media (min-width: 1440px) {
+  #gallery #videoheroall #videoheroinfo {
+    width: 500px;
+  }
+}
+#gallery #videoheroall #videoheroinfo h5 {
+  margin-top: 10px;
+}
+#gallery #videoheroall #videoheroinfo h1 {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+@media (min-width: 768px) {
+  #gallery #videoheroall #videoheroinfo h1 {
+    padding-top: 32px;
+  }
+}
+#gallery #videoheroall #videoheroinfo p {
+  padding-bottom: 20px;
+  font-size: small;
 }
 @media (min-width: 768px) {
   #gallery #vidcards > div {
@@ -1821,4 +1876,24 @@ body {
 }
 #gallery #bottomhpend {
   margin-bottom: 70px;
+}
+#gallery #mediause {
+  margin-bottom: 50px;
+}
+#gallery #mediause h1 {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+@media (min-width: 768px) {
+  #gallery #mediause h1 {
+    padding-top: 32px;
+  }
+}
+#gallery #mediause p {
+  padding-bottom: 20px;
+  font-size: small;
+}
+#gallery #mediause h5 {
+  text-decoration: underline;
+  cursor: pointer;
 }

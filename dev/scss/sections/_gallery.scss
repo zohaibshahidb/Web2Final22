@@ -269,35 +269,85 @@
 
     // Video hero
 
-    #vidcardhero {
-        width: 400px;
-        height: 250px;
-        overflow: hidden;
-        border: 1px;
-        border-style: solid;
-        border-color: white;
-
-        img {
-            width: 100%;
+    #videoheroall{
+        @include lg{
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-areas: "vidcardhero videoheroinfo";
         }
-
-        #play {
-            width: 20px;
-            display: flex;
-            align-items: center;
-            vertical-align: middle;
-            margin: auto;
-            margin-top: -150px;
-        }
-        h3{
-            display: none;
-            padding: 16px;
+        #vidcardhero {
+            grid-area: vidcardhero;
+            width: 400px;
+            height: 250px;
+            overflow: hidden;
+            border: 1px;
+            border-style: solid;
+            border-color: white;
             @include md{
-                margin-top: -140px;
-                display: grid
+            width: 700px;
+            height: 420px;
+            }
+    
+            img {
+                height: 400px;
+                margin-top: -0px;
+                @include md{
+                    height: 700px;
+                    margin-top: -160px;
+                }
+            }
+    
+            #play {
+                width: 20px;
+                display: flex;
+                align-items: center;
+                vertical-align: middle;
+                margin: auto;
+                margin-top: -400px;
+                @include md{
+                    margin-top: -600px;
+                }
+            }
+            h3{
+                display: none;
+                padding: 16px;
+                @include md{
+                    margin-top: -140px;
+                    display: grid
+                }
             }
         }
+
+        #videoheroinfo{
+            grid-area: videoheroinfo;
+            @include md{
+                padding: 16px;
+            }
+            @include xxl{
+                width: 500px;
+            }
+            h5{
+                margin-top: 10px;
+            }
+            
+            h1 {
+                padding-top: 16px;
+                padding-bottom: 16px;
+    
+                @include md {
+                    padding-top: 32px;
+                }
+            }
+    
+            p {
+                padding-bottom: 20px;
+                font-size: small;
+            }
+        }
+
     }
+
+    
 
     // Video cards
 
@@ -342,6 +392,27 @@
 
     #bottomhpend {
         margin-bottom: 70px;
+    }
+
+    #mediause{
+        margin-bottom: 50px;
+        h1 {
+            padding-top: 16px;
+            padding-bottom: 16px;
+
+            @include md {
+                padding-top: 32px;
+            }
+        }
+
+        p {
+            padding-bottom: 20px;
+            font-size: small;
+        }
+        h5{
+            text-decoration: underline;
+            cursor: pointer;
+        }
     }
 
     // End of page
