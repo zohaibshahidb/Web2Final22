@@ -14,7 +14,7 @@ body{
 
 
     #headimg{
-        margin-top: 30px;
+        margin-top: 50px;
         width: 100%;
         height: 150px;
         overflow: hidden;
@@ -30,6 +30,21 @@ body{
             display: grid;
         }
         display: none;
+    }
+
+    #moonandearth{
+        display: none;
+        @include md{
+            display: grid;
+        }
+        @include lg{
+            display: none;
+        }
+        height: 50px;
+        img{
+            height: 390px;
+            margin-left: 400px;
+        }
     }
 
     #head1mission{
@@ -330,6 +345,7 @@ body{
             grid-template-columns: 300px auto;
             grid-template-areas: "recentnewsimg recentnewstxt";
             #recentnewsimg2{
+                margin-left: -40px;
                 grid-area: recentnewsimg;
                 display: grid;
                 grid-template-columns: auto;
@@ -375,57 +391,103 @@ body{
 
     // Hero image card
 
-    #addarrowsimgcard{
-        grid-area: heroimgcardall;
-        >div{
+    #heroimgcardmd{
+        @include md{
             display: grid;
-            grid-template-columns: 40px auto 40px;
-            grid-template-areas: "arrowleft heroimgcard arrowright";
-            #arrowleft{
-                grid-area: arrowleft;
-            }
+            grid-template-columns: auto 50%;
+            grid-template-areas: "heroimgcardinfo heroimgcardall";
+        }
+
+        #heroimgcardinfo{
+            grid-area: heroimgcardinfo;
+            display: none;
+            margin-top: -100px;
             >div{
-                grid-area: heroimgcard;
-                #heroimgcard1{
-                    #heroimgdiv{
-                        display: grid;
-                        grid-template-columns: auto 275px auto;
-                        width: 275px;
-                        height: 420px;
-                        overflow: hidden;
-                        border-radius: 30px;
-                        border: 1px;
-                        border-color: white;
-                        border-style: solid;
-                        img{
-                        margin: -50px 0px 0px -300px;     
+                background-color: var(--spaceteal);
+                padding: 32px;
+                width: 200px;
+                height: 250px;
+                h3{
+                    margin-bottom: 20px;
+                }
+            }
+
+            @include md{
+                display: grid;
+            }
+        }
+        
+        #addarrowsimgcard{
+            grid-area: heroimgcardall;
+            >div{
+                display: grid;
+                grid-template-columns: 40px auto 40px;
+                grid-template-areas: "arrowleft heroimgcard arrowright";
+                #arrowleft{
+                    grid-area: arrowleft;
+                }
+                >div{
+                    grid-area: heroimgcard;
+                    #heroimgcard1{
+                        #heroimgdiv{
+                            display: grid;
+                            grid-template-columns: auto 275px auto;
+                            width: 275px;
+                            height: 420px;
+                            overflow: hidden;
+                            border-radius: 30px;
+                            border: 1px;
+                            border-color: white;
+                            border-style: solid;
+                            img{
+                            margin: -50px 0px 0px -300px;     
+                            }
                         }
-                    }
-                    #heroimgcardtxt{
-                        margin-top: -120px;
-                        width: 240px;
-                        margin-left: 16px;
-                        font-size: 18px;
-                        line-height: 25px;
-                        letter-spacing: 2px;
-                        
-                        @include md{
-                            display: none;
+                        #heroimgcardtxt{
+                            margin-top: -120px;
+                            width: 240px;
+                            margin-left: 16px;
+                            font-size: 18px;
+                            line-height: 25px;
+                            letter-spacing: 2px;
+                            
+                            @include md{
+                                display: none;
+                            }
                         }
                     }
                 }
+                #arrowright{
+                    grid-area: arrowright;
+                }
             }
-            #arrowright{
-                grid-area: arrowright;
-            }
+            margin-bottom: 100px;
         }
-        margin-bottom: 100px;
     }
 
     // Enf of hero image card
 
 
     // Image Cards
+
+    #imgcards{
+        >div{
+            @include md{
+                display: grid;
+                grid-template-columns: 50% auto;
+                grid-template-areas: "img1 img2";
+            }
+            #img1{
+                grid-area: img1;
+            }
+            #img2{
+                grid-area: img2;
+            }
+            #img3{
+                grid-area: img3;
+            }
+        }  
+    }
 
     #imgcard1{
         img{
@@ -446,6 +508,13 @@ body{
         }
     }
 
+    #imgcard3{
+        @include md{
+            display: none;
+        }
+    }
+
+
     #moreimgbutton{
 
     }
@@ -457,6 +526,24 @@ body{
     }
 
     // Video cards
+
+    #vidcards{
+        >div{
+            @include md{
+                display: grid;
+                grid-template-columns: 50% auto;
+                grid-template-areas: "vid1 vid2";
+            }
+            #vid1{
+                grid-area: vid1;
+                margin: 24px;
+            }
+            #vid2{
+                grid-area: vid2;
+                margin: 24px;
+            }
+        }  
+    }
 
 
     #gap20pxvid{

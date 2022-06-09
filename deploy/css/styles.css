@@ -412,6 +412,10 @@ ul li {
   margin-bottom: 20px;
 }
 
+.imgcard :hover {
+  cursor: pointer;
+}
+
 .imgcard {
   display: grid;
   grid-template-columns: auto 275px auto;
@@ -563,6 +567,11 @@ body {
   border: 2px;
   border-color: white;
   border-style: solid;
+  cursor: pointer;
+}
+
+.defaultbutton :hover {
+  cursor: pointer;
 }
 
 /* =============
@@ -638,7 +647,7 @@ body {
 }
 
 #homepg #headimg {
-  margin-top: 30px;
+  margin-top: 50px;
   width: 100%;
   height: 150px;
   overflow: hidden;
@@ -653,6 +662,24 @@ body {
   #homepg #headimg {
     display: grid;
   }
+}
+#homepg #moonandearth {
+  display: none;
+  height: 50px;
+}
+@media (min-width: 768px) {
+  #homepg #moonandearth {
+    display: grid;
+  }
+}
+@media (min-width: 1024px) {
+  #homepg #moonandearth {
+    display: none;
+  }
+}
+#homepg #moonandearth img {
+  height: 390px;
+  margin-left: 400px;
 }
 #homepg #head1mission {
   margin-top: 40px;
@@ -940,6 +967,7 @@ body {
   grid-template-areas: "recentnewsimg recentnewstxt";
 }
 #homepg #recentnews2 > div #recentnewsimg2 {
+  margin-left: -40px;
   grid-area: recentnewsimg;
   display: grid;
   grid-template-columns: auto;
@@ -974,22 +1002,48 @@ body {
 #homepg #gapquicklinksend {
   margin-top: 80px;
 }
-#homepg #addarrowsimgcard {
+@media (min-width: 768px) {
+  #homepg #heroimgcardmd {
+    display: grid;
+    grid-template-columns: auto 50%;
+    grid-template-areas: "heroimgcardinfo heroimgcardall";
+  }
+}
+#homepg #heroimgcardmd #heroimgcardinfo {
+  grid-area: heroimgcardinfo;
+  display: none;
+  margin-top: -100px;
+}
+#homepg #heroimgcardmd #heroimgcardinfo > div {
+  background-color: var(--spaceteal);
+  padding: 32px;
+  width: 200px;
+  height: 250px;
+}
+#homepg #heroimgcardmd #heroimgcardinfo > div h3 {
+  margin-bottom: 20px;
+}
+@media (min-width: 768px) {
+  #homepg #heroimgcardmd #heroimgcardinfo {
+    display: grid;
+  }
+}
+#homepg #heroimgcardmd #addarrowsimgcard {
   grid-area: heroimgcardall;
   margin-bottom: 100px;
 }
-#homepg #addarrowsimgcard > div {
+#homepg #heroimgcardmd #addarrowsimgcard > div {
   display: grid;
   grid-template-columns: 40px auto 40px;
   grid-template-areas: "arrowleft heroimgcard arrowright";
 }
-#homepg #addarrowsimgcard > div #arrowleft {
+#homepg #heroimgcardmd #addarrowsimgcard > div #arrowleft {
   grid-area: arrowleft;
 }
-#homepg #addarrowsimgcard > div > div {
+#homepg #heroimgcardmd #addarrowsimgcard > div > div {
   grid-area: heroimgcard;
 }
-#homepg #addarrowsimgcard > div > div #heroimgcard1 #heroimgdiv {
+#homepg #heroimgcardmd #addarrowsimgcard > div > div #heroimgcard1 #heroimgdiv {
   display: grid;
   grid-template-columns: auto 275px auto;
   width: 275px;
@@ -1000,10 +1054,10 @@ body {
   border-color: white;
   border-style: solid;
 }
-#homepg #addarrowsimgcard > div > div #heroimgcard1 #heroimgdiv img {
+#homepg #heroimgcardmd #addarrowsimgcard > div > div #heroimgcard1 #heroimgdiv img {
   margin: -50px 0px 0px -300px;
 }
-#homepg #addarrowsimgcard > div > div #heroimgcard1 #heroimgcardtxt {
+#homepg #heroimgcardmd #addarrowsimgcard > div > div #heroimgcard1 #heroimgcardtxt {
   margin-top: -120px;
   width: 240px;
   margin-left: 16px;
@@ -1012,12 +1066,28 @@ body {
   letter-spacing: 2px;
 }
 @media (min-width: 768px) {
-  #homepg #addarrowsimgcard > div > div #heroimgcard1 #heroimgcardtxt {
+  #homepg #heroimgcardmd #addarrowsimgcard > div > div #heroimgcard1 #heroimgcardtxt {
     display: none;
   }
 }
-#homepg #addarrowsimgcard > div #arrowright {
+#homepg #heroimgcardmd #addarrowsimgcard > div #arrowright {
   grid-area: arrowright;
+}
+@media (min-width: 768px) {
+  #homepg #imgcards > div {
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-areas: "img1 img2";
+  }
+}
+#homepg #imgcards > div #img1 {
+  grid-area: img1;
+}
+#homepg #imgcards > div #img2 {
+  grid-area: img2;
+}
+#homepg #imgcards > div #img3 {
+  grid-area: img3;
 }
 #homepg #imgcard1 img {
   align-items: center;
@@ -1026,8 +1096,28 @@ body {
 #homepg #imgcard2 img {
   margin: 0px 0px 0px 0px;
 }
+@media (min-width: 768px) {
+  #homepg #imgcard3 {
+    display: none;
+  }
+}
 #homepg #imgvidgap {
   margin-bottom: 40px;
+}
+@media (min-width: 768px) {
+  #homepg #vidcards > div {
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-areas: "vid1 vid2";
+  }
+}
+#homepg #vidcards > div #vid1 {
+  grid-area: vid1;
+  margin: 24px;
+}
+#homepg #vidcards > div #vid2 {
+  grid-area: vid2;
+  margin: 24px;
 }
 #homepg #gap20pxvid {
   margin-bottom: 20px;

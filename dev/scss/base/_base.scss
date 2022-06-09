@@ -52,6 +52,10 @@ ul{
 
 // Cards
 
+.imgcard :hover{
+    cursor: pointer;
+}
+
 .imgcard{
     display: grid;
     grid-template-columns: auto 275px auto;
