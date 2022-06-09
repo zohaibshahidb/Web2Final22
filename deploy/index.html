@@ -13,7 +13,7 @@
 
 <body>
     <!-- /* =============
-        Home Page
+        Header
     ============= */ -->
     
     <section id="header">
@@ -26,8 +26,36 @@
         <section id="stripes">
             <div id="stripe1"></div>
             <div id="stripe2"></div>
+    
+            <a href="#" class="toggle" id="toggle">☰</a>
+            <nav class="nav" id="nav">
+                <div class="navlinks">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Missions</a></li>
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="#">Education</a></li>
+                        <li><a href="#">About Us</a></li>
+                      </ul>
+                </div>
+            </nav>
+    
             <div id="stripe3"></div>
             <div id="stripe4"></div>
+        </section>
+    
+        <section>
+            <div id="circle1"></div>
+        </section>
+    
+        <section>
+            <div id="circle2"></div>
+        </section>
+    
+        <section id="logo" class="globalcssgrid">
+            <div>
+                <img src="img/header/NASA_logo.png" alt="logo">
+            </div>
         </section>
     
         <!-- End of header -->
@@ -36,6 +64,7 @@
         <!-- Header content -->
     
     
+            
     
         <!-- End of header content -->
     
@@ -67,6 +96,14 @@
             <img src="img/content/moonandearth.png" alt="moonandearth">
         </div>
     </section>
+    
+    <section id="moonearthjupiter">
+        <div>
+            <img src="img/content/moonearthjupiter.png" alt="moonearthjupiter">
+        </div>
+    </section>
+    
+    <!-- Header -->
     
     <section id="head1mission">
     <h4>Mission: Artemis 1</h4>
@@ -152,7 +189,10 @@
                 <div id="climatetxt">
                     <h4>Climate News</h4>
             
-                    <p>Thawing Permafrost Could Leach Microbes, Chemicals Into Environment</p>
+                    <h5>Thawing Permafrost Could Leach Microbes, Chemicals Into Environment</h5>
+    
+                    <p>Scientists are turning to a combination of data collected from the air, land, and space to get a more complete picture of how climate change is affecting the planet’s frozen regions.
+                    </p>
                    
                     <div class="readmore">
                         <a href="url/">Read More</a>
@@ -191,7 +231,7 @@
     
     
     <!-- Hero image card -->
-    <section id="heroimgcardmd">
+    <section id="heroimgcardmd" class="center">
         <div id="heroimgcardfull">
             
             <section id="addarrowsimgcard" class="center">
@@ -200,8 +240,8 @@
                         <img src="img/assets/arrowleft.svg" alt="arrowleft">
                     </div>
                     
-                    <div class="center">
-                        <section id="heroimgcard1">
+                    <div id="heroimgcard1" class="center">
+                        <section>
                             <div>
                                 <div id="heroimgdiv">
                                     <img src="img/content/heroimgcard.jpeg" alt="heroimgcard">
@@ -210,6 +250,17 @@
                             </div>
                         </section>
                     </div>
+    
+                    <div id="heroimgcard2">
+                        <section>
+                            <div>
+                                <div id="heroimgdiv2">
+                                    <img src="img/content/earth-iss-spaceflight.jpeg" alt="heroimgcard">
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    
                     
                     <div id="arrowright" class="center">
                         <img src="img/assets/arrowright.svg" alt="arrowright">
@@ -238,7 +289,7 @@
     <section id="recentnews2">
         <div>
             <div id="recentnewsimg2">
-                <img src="img/content/recentnews2.avif" alt="recentnewsimg">
+                <img src="img/content/recentnews2.jpeg" alt="recentnewsimg">
             </div>
             <div id="recentnewstxt2">
                 <h4>Recent News</h4>
@@ -264,9 +315,9 @@
     
     <!-- Images -->
     
-    <section id="imgcards">
+    <section id="imgcards" class="center">
     <div>
-        <div id="img1" class="center">
+        <div id="img1">
         <section id="imgcard1" class="imgcard">
             <div>
                 <img src="img/content/space-flame-cropped.jpg" alt="">
@@ -279,7 +330,7 @@
         </section>
         </div>
     
-        <div id="img2" class="center">
+        <div id="img2">
         <section id="imgcard2" class="imgcard">
         <div>
             <img src="img/content/mae_jemison.jpeg" alt="">
@@ -292,7 +343,7 @@
         </section>
         </div>
     
-        <div id="img3" class="center">
+        <div id="img3">
         <section id="imgcard3" class="imgcard">
         <div>
             <img src="img/content/selfieonmars.jpg" alt="">
@@ -354,12 +405,27 @@
             </section>
         </div>
     
+        <div id="vid3">
+            <section id="vidcard3" class="vidcardall">
+        <section class="vidcard">
+            <div>
+                <img src="img/content/markvandehei.jpeg" alt="">
+                <article>
+                    <h5>Humans in space</h5>
+                    <h3>Mark Vande Hei and Crew</h3>
+                </article>
+            </div>
+        </section>
+        <p>NASA astronaut Mark Vande Hei, left, and cosmonauts Anton Shkaplerov, center, and Pyotr Dubrov are seen inside their Soyuz MS-19 spacecraft after landing.</p>
+            </section>
+        </div>
+    
     </div>
     
     </section>
     
     
-    <section class="center">
+    <section id="bottomhpend" class="center">
         <button class="defaultbutton">More Videos</button>
     </section>
     
@@ -369,6 +435,77 @@
     </section>
 
     <script src="js/scripts-min.js"></script>
+
+    
+    <section id="footer">
+    
+         
+        <section id="stripess">
+            <div id="stripee1"></div>
+            <div id="stripee2"></div>
+            <div id="stripee3"></div>
+        </section>
+    
+    <section class="globalcssgrid">
+    <div>
+    
+        <section id="footerall">
+            <div>
+                <section id="footerlogontxt">
+                    <div>
+                        <div id="footerlogo">
+                            <img src="img/header/NASA_Logo.png" alt="footerlogo">
+                        </div>
+                    
+                        <div id="footerlogotxt">
+                            <h3>National Aeronautics and Space Administration</h3>
+                            <h5>NASA Official: Brian Dunbar</h5>
+                        </div>
+                    </div>
+                </section>
+            </div>
+               
+            
+            
+            <div>
+                <section id="navall">
+                    <div>
+                        <nav class="navfoot" id="navfoor">
+                            <div class="navlinksfoot">
+                                <ul>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Missions</a></li>
+                                    <li><a href="#">Gallery</a></li>
+                                    <li><a href="#">Education</a></li>
+                                    <li><a href="#">About Us</a></li>
+                                  </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </section>
+            </div>
+                
+            <div>
+                <section id="socials">
+                    <div>
+                        <img src="img/assets/instagram.svg" alt="insta">
+                        <img src="img/assets/facebook.svg" alt="fb">
+                        <img src="img/assets/linkedin-in.svg" alt="linked-in">
+                    </div>
+                </section>
+            </div>
+    
+                
+        </section>
+    
+    </div>
+    </section>
+    
+    
+    </section>
+    
+    
+
 </body>
 
 </html>

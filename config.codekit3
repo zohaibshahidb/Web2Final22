@@ -21,6 +21,14 @@
       "oF" : 0,
       "pg" : 0
     },
+    "\/deploy\/gallery.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/gallery.html",
+      "oF" : 0
+    },
     "\/deploy\/img\/assets\/arrowleft.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -36,6 +44,46 @@
       "miP" : 0,
       "oA" : 2,
       "oAP" : "\/deploy\/img\/assets\/arrowright.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/deploy\/img\/assets\/facebook.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/assets\/facebook.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/deploy\/img\/assets\/instagram.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/assets\/instagram.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/deploy\/img\/assets\/linkedin-in.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/assets\/linkedin-in.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/deploy\/img\/assets\/play.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/assets\/play.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
@@ -119,6 +167,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/deploy\/img\/content\/imgofdayhead.jpeg" : {
+      "ft" : 16384,
+      "iS" : 143656,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/content\/imgofdayhead.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/img\/content\/jpegPIA24173.jpeg" : {
       "ft" : 16384,
       "iS" : 11010484,
@@ -158,11 +219,37 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/deploy\/img\/content\/MarkVandeHei.jpeg" : {
+      "ft" : 16384,
+      "iS" : 185689,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/content\/MarkVandeHei.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/img\/content\/moonandearth.png" : {
       "ft" : 32768,
-      "iS" : 0,
+      "iS" : 472144,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/content\/moonandearth.png",
+      "oF" : 0,
+      "oIPL" : 1,
+      "opt" : 1,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/content\/moonearthjupiter.png" : {
+      "ft" : 32768,
+      "iS" : 461760,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/content\/moonearthjupiter.png",
       "oF" : 0,
       "oIPL" : 1,
       "opt" : 1,
@@ -191,6 +278,19 @@
       "oA" : 0,
       "oAP" : "\/deploy\/img\/content\/recentnews2.avif",
       "oF" : 0
+    },
+    "\/deploy\/img\/content\/recentnews2.jpeg" : {
+      "ft" : 16384,
+      "iS" : 374566,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/content\/recentnews2.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
     },
     "\/deploy\/img\/content\/recentnewsimg1.jpeg" : {
       "ft" : 16384,
@@ -280,6 +380,19 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/deploy\/img\/header\/NASA_logo.png" : {
+      "ft" : 32768,
+      "iS" : 219328,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/header\/NASA_logo.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/index.html" : {
       "cB" : 0,
       "ft" : 8192,
@@ -299,6 +412,14 @@
       "sC" : 3,
       "tS" : 0
     },
+    "\/dev\/content\/gallerypg.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/gallerypg.html",
+      "oF" : 1
+    },
     "\/dev\/content\/homepg.kit" : {
       "cB" : 0,
       "ft" : 2048,
@@ -306,6 +427,14 @@
       "oA" : 1,
       "oAP" : "\/dev\/content\/homepg.html",
       "oF" : 0
+    },
+    "\/dev\/gallery.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/gallery.html",
+      "oF" : 2
     },
     "\/dev\/global\/footer.kit" : {
       "cB" : 0,
@@ -503,6 +632,21 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/scss\/layout\/_header.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/dev\/scss\/sections\/_gallery.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/sections\/_gallery.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,

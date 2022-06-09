@@ -1,3 +1,128 @@
 /* =============
     Footer
 ============= */
+
+#footer{
+    background-color: var(--spaceteal);
+    height: 500px;
+    #stripess{
+        background-color: black;
+        #stripee1{
+            margin-top: 7px;
+            width: 100%;
+            height: 10px;
+            background-color: var(--nasaorange);
+        }
+        #stripee2{
+            margin-top: 5px;
+            width: 100%;
+            height: 20px;
+            background-color: var(--nasateal);
+        }
+        #stripee3{
+            margin-top: 0px;
+            width: 100%;
+            height: 5px;
+            background-color: none;
+        }
+    }
+
+    #footerlogontxt{
+        grid-area: footerlogontxt;
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: 100px 300px;
+        grid-template-areas: "footerlogo footerlogotxt";
+
+        #footerlogo{
+            grid-area: footerlogo;
+            img{
+                width: 90px;
+            }
+        }
+
+        #footerlogotxt{
+            margin-top: 7px;
+            grid-area: footerlogotxt;
+            width: 250px;
+            h3{
+                font-size: 14px;
+                line-height: 20px;
+            }
+            h5{
+                margin-top: -12px;
+                font-size: 12px;
+                font-weight: 100;
+            }
+        }
+    }
+
+
+    .navfoot{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: var(--nasalight);
+        
+    }
+
+    .navlinksfoot ul{
+        margin: 0;
+        padding: 0;
+        @include md{
+        display: flex;
+        margin-top: 24px;
+        }
+        
+        
+    }
+
+    .navlinksfoot li{
+        list-style: none;
+    }
+
+    .navlinksfoot li a{
+        text-decoration: none;
+        color: var(--nasalight);
+        padding: 2px 16px 2px 16px;
+        display: block;
+        font-size: 12px;
+    }
+    .navlinksfoot li:hover{
+        cursor: pointer;
+    }
+
+    #navall{
+        grid-area: navall;
+        padding: 16px;
+    }
+
+    #socials{
+        display: flex;
+        margin-top: 24px;
+        grid-area: socials;
+        img{
+            padding: 5px;
+        }
+    }
+
+    
+
+
+    #footerall{
+        
+        @include md{
+        display: grid;
+        grid-template-columns: 50% auto;
+        grid-template-areas: "footerlogontxt navall";
+        }
+        @include xl{
+            display: grid;
+            grid-template-columns: 50% auto;
+            grid-template-areas: "footerlogontxt socials navall";
+            }
+    }
+
+    
+}
+

@@ -12,8 +12,8 @@ body{
     // Hero
 
 
-
     #headimg{
+        
         margin-top: 50px;
         width: 100%;
         height: 150px;
@@ -33,6 +33,7 @@ body{
     }
 
     #moonandearth{
+        
         display: none;
         @include md{
             display: grid;
@@ -47,7 +48,30 @@ body{
         }
     }
 
+    #moonearthjupiter{
+        display: none;
+        @include lg{
+            display: grid;
+        }
+        height: 50px;
+        img{
+            height: 390px;
+            margin-left: 550px;
+            @include xl{
+                height: 420px;
+            margin-left: 670px
+            }
+            @include xxl{
+                height: 600px;
+                margin-left: 800px;
+                margin-top: -100px;
+
+            }
+        }
+    }
+
     #head1mission{
+        
         margin-top: 40px;
         margin-bottom: 10px;
         letter-spacing: 5px;
@@ -56,9 +80,13 @@ body{
         @include md{
             font-size: large;
         }
+        @include xl{
+            font-size: 32px;
+        }
     }
 
     #heroheader{
+        
         width: 350px;
         line-height: 60px;
         text-transform: uppercase;
@@ -69,9 +97,14 @@ body{
             width: 600px;
             line-height: 70px;
         }
+        @include xl{
+            font-size: 32px;
+            width: 700px;
+        }
     }
 
     #headerbody{
+        
         letter-spacing: 0.1px;
         line-height: 25px;
         font-size: 14px;
@@ -84,6 +117,7 @@ body{
     // Enter name and passcode
 
     #entername{
+        
         >div{
             form{
                 display: flex;
@@ -117,6 +151,7 @@ body{
     }
 
     #pin{
+        
         >div{
             form{
                 display: flex;
@@ -165,6 +200,7 @@ body{
 
     
     article{
+        
         grid-area: pininfo;
         >div{
             display: flex;
@@ -195,14 +231,19 @@ body{
     // Quick links
 
     #climateandevents{
+       
         @include md{
-            margin-top: -200px;
+            
             display: grid;
             grid-template-columns: 50% auto;
+            @include xxl{
+                grid-template-columns: 70% auto;
+            }
             grid-template-areas: "climate events";
         }
     
         #events{
+            margin-top: -200px;
             grid-area: events;
             display: none;
             background-color: var(--spaceteal);
@@ -239,7 +280,7 @@ body{
         }
 
         #climate{
-            margin-top: 200px;
+
             grid-area: climate;
             >div{
                 align-items: center;
@@ -247,6 +288,9 @@ body{
                 gap: 16px;
                 display: grid;
                 grid-template-columns: 160px auto;
+                @include xxl{
+                    grid-template-columns: 30% auto;
+                }
                 grid-template-areas: "climateimg climatetxt";
                 #climateimg{
                     grid-area: climateimg;
@@ -256,10 +300,18 @@ body{
                     height: 170px;
                     overflow: hidden;
                     border-radius: 30px;
+                    @include xxl{
+                        height: 230px;
+                        width: 200px;
+                    }
                     
                     img{
                         margin: 0px 0px 0px -40px;     
                         height: 170px;
+                        @include xxl{
+                            margin: 0px 0px 0px -60px;
+                            height: 230px;
+                        }
                     }
                 }
     
@@ -267,6 +319,9 @@ body{
                     grid-area: climatetxt;
                     color: white;
                     width: 150px;
+                    @include xxl{
+                        width: 400px;
+                    }
                     h4{
                         text-transform: uppercase;
                         letter-spacing: 3px;
@@ -274,8 +329,22 @@ body{
                         font-family: 'Righteous', cursive;
                         margin-bottom: 10px;
                     }
-                    p{
+                    h5{
                         font-size: small;
+                        font-weight: 200;
+                        @include xxl{
+                            font-size: large;
+                            font-weight: 600;
+                            line-height: 40px;
+                        }
+                    }
+                    p{
+                        display: none;
+                        font-size: small;
+                        margin-top: 20px;
+                        @include xxl{
+                            display: grid;
+                        }
                     }
                 }
             }
@@ -285,10 +354,12 @@ body{
 
 
     #gapquicklinksmid{
+        
         margin-top: 60px;
     }
 
     #recentnews{
+        
         @include md{
             display: none;
         }
@@ -333,6 +404,7 @@ body{
     }
 
     #recentnews2{
+        
         display: none;
         @include md{
             display: grid;
@@ -383,6 +455,7 @@ body{
     }
 
     #gapquicklinksend{
+        
         margin-top: 80px;
     }
 
@@ -392,6 +465,7 @@ body{
     // Hero image card
 
     #heroimgcardmd{
+        
         @include md{
             display: grid;
             grid-template-columns: auto 50%;
@@ -399,9 +473,17 @@ body{
         }
 
         #heroimgcardinfo{
+            
             grid-area: heroimgcardinfo;
             display: none;
             margin-top: -100px;
+            @include md{
+                margin-left: 80px;
+            }
+            @include xxl{
+                margin-left: 50px;
+                margin-right: 100px;
+            }
             >div{
                 background-color: var(--spaceteal);
                 padding: 32px;
@@ -418,18 +500,20 @@ body{
         }
         
         #addarrowsimgcard{
+            
             grid-area: heroimgcardall;
             >div{
                 display: grid;
-                grid-template-columns: 40px auto 40px;
-                grid-template-areas: "arrowleft heroimgcard arrowright";
+                gap: 16px;
+                grid-template-columns: auto;
+                grid-template-areas: "arrowleft heroimgcard heroimgcard2 arrowright";
                 #arrowleft{
                     grid-area: arrowleft;
                 }
-                >div{
-                    grid-area: heroimgcard;
+                
                     #heroimgcard1{
                         #heroimgdiv{
+                            grid-area: heroimgcard;
                             display: grid;
                             grid-template-columns: auto 275px auto;
                             width: 275px;
@@ -456,9 +540,39 @@ body{
                             }
                         }
                     }
-                }
+
+                    #heroimgcard2{
+                        
+                        margin-left: 50px;
+                        display: none;
+                        @include xxl{
+                            display: grid;
+                        }
+                        #heroimgdiv2{
+                            grid-area: heroimgcard2;
+                            display: grid;
+                            grid-template-columns: auto 275px auto;
+                            width: 275px;
+                            height: 420px;
+                            overflow: hidden;
+                            border-radius: 30px;
+                            border: 1px;
+                            border-color: white;
+                            border-style: solid;
+                            img{
+                            margin: -50px 0px 0px -390px;
+                            height: 500px;     
+                            }
+                        }
+                    }
+                
                 #arrowright{
+                    
+                    margin-left: -10px;
                     grid-area: arrowright;
+                    @include xxl{
+                        display: none;
+                    }
                 }
             }
             margin-bottom: 100px;
@@ -471,28 +585,43 @@ body{
     // Image Cards
 
     #imgcards{
+    
+        align-items: center;
+        justify-content: center;
+        gap: 32px;
         >div{
             @include md{
                 display: grid;
-                grid-template-columns: 50% auto;
+                grid-template-columns: auto;
                 grid-template-areas: "img1 img2";
             }
+            @include xl{
+                display: grid;
+                grid-template-columns: auto;
+                grid-template-areas: "img1 img2 img3";
             #img1{
                 grid-area: img1;
+                @include lg{
+                    margin-left: 260px;
+                }
+                @include xl{
+                    margin-left: 0px;
+                }
             }
-            #img2{
-                grid-area: img2;
-            }
-            #img3{
-                grid-area: img3;
-            }
-        }  
+                #img2{
+                    grid-area: img2;
+                }
+                #img3{
+                    grid-area: img3;
+                }
+            }  
+        }
     }
 
     #imgcard1{
+        margin: 24px;
         img{
-            align-items: center;
-            margin: 0px 0px 0px 0px;
+
         }
         article{
             
@@ -500,8 +629,9 @@ body{
     }
 
     #imgcard2{
+        margin: 24px;
         img{
-        margin: 0px 0px 0px 0px;
+
         }
         article{
             
@@ -509,8 +639,13 @@ body{
     }
 
     #imgcard3{
+        margin: 24px;
         @include md{
             display: none;
+        }
+
+        @include xl{
+            display: grid;
         }
     }
 
@@ -528,11 +663,12 @@ body{
     // Video cards
 
     #vidcards{
+        
         >div{
             @include md{
                 display: grid;
-                grid-template-columns: 50% auto;
-                grid-template-areas: "vid1 vid2";
+                grid-template-columns: auto;
+                grid-template-areas: "vid1 vid2 vid3";
             }
             #vid1{
                 grid-area: vid1;
@@ -542,7 +678,18 @@ body{
                 grid-area: vid2;
                 margin: 24px;
             }
-        }  
+            #vid3{
+                grid-area: vid3;
+                margin: 24px;
+        @include md{
+            display: none;
+        }
+
+        @include xl{
+            display: grid;
+        }
+            }
+        }
     }
 
 
@@ -550,6 +697,9 @@ body{
         margin-bottom: 20px;
     }
 
+    #bottomhpend{
+        margin-bottom: 70px;
+    }
 
     // End of page
     }
